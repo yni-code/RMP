@@ -14,28 +14,44 @@
   <!-- My Style -->
   <link rel="stylesheet" href="./style/main.css" />
 <style>
-        /* CSS lama kamu */
+      
 
-        .photo-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 150px);
-            gap: 20px;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
 
-        .profile-picture {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
+/* tampilan normal (tablet / desktop) */
+.photo-grid{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
 
-        .profile-picture:hover {
-            transform: scale(1.05);
-            transition: 0.3s;
-        }
+.profile-picture{
+    width:180px;
+    height:auto;
+    max-height:220px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* mobile */
+@media (max-width:600px){
+
+.profile-picture{
+    width:120px;
+    height:auto;
+}
+
+}
+
+.wish-hbd{
+    font-size:22px;
+}
+
+#wishText{
+    font-size:14px;
+}
 
     </style>
   
@@ -64,12 +80,15 @@
 
         <div class="three">
             <p>It's your birthday!! :D</p>
+
+             <img src="rmp6.jpg" class="birthday-photo">
+</div>
         </div>
 
         <div class="four">
             <div class="text-box">
                 <p class="hbd-chatbox">
-                Happy birthday to youu!! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam amet ipsam vitae, voluptatum architecto aliquid id quo error tempora quos aperiam magni necessitatibus quas ut, possimus nesciunt nam ad.
+               selamat ulang tahun yah, semoga di tahun ini kamu diberikan keberkahan yang semakin melimpah, rezeki yang semakin banyak, selalu di berikan kesehatan, dan semoga bisa tercapai semua keinginan kamu yah sayang ku. love you 
                 </p>
                 <p class="fake-btn">Send</p>
             </div>
@@ -107,17 +126,17 @@
         <div class="six">
 
     <div class="photo-grid">
-        <img src="./img/rmp.jpeg" alt="profile1" class="profile-picture"/>
+        <!--img src="./img/rmp.jpeg" alt="profile1" class="profile-picture"/-->
         <img src="./img/rmp1.jpeg" alt="profile2" class="profile-picture"/>
-        <img src="./img/rmp2.jpeg" alt="profile3" class="profile-picture"/>
-        <img src="./img/rmp3.jpeg" alt="profile4" class="profile-picture"/>
+        <!--img src="./img/rmp2.jpeg" alt="profile3" class="profile-picture"/-->
+        <!--img src="./img/rmp3.jpeg" alt="profile4" class="profile-picture"/-->
     </div>
 
-    <img src="img/hat.svg" alt="hat" class="hat" />
+    <!--img src="img/hat.svg" alt="hat" class="hat" /-->
 
     <div class="wish">
         <h3 class="wish-hbd">Happy Birthday</h3>
-        <h5 id="wishText">Barakallah fii umrik ;)</h5>
+        <h5 id="wishText">Barakallah fii umrik, My love </h5>
     </div>
 
 </div>
